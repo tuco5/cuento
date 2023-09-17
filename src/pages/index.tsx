@@ -14,7 +14,7 @@ export default function Home() {
         >
           Un cuento interactivo 😋
         </Link>
-        <p className="text-xl">Por Tudor Comparán</p>
+        <p className="text-xl">Por Tudor Comparán, versión en español.</p>
       </div>
 
       <div className="h-[768px] w-full max-w-[1024px] bg-slate-500 flex justify-center items-center mb-8">

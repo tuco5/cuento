@@ -24,9 +24,12 @@ export default function Slider({}) {
       <SwiperSlide>
         <Slide1 />
       </SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>
+        <Slide2 />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Slide3 />
+      </SwiperSlide>
     </Swiper>
   );
 }
@@ -45,6 +48,26 @@ function Slide1() {
         Un joven discípulo solicitó al Maestro Iluminado el asistir en silencio a las entrevistas que éste concedía a aquellas personas que iban en busca de su consejo y sabiduría.
       </p>
       <Image src="/images/slide_1.jpg" alt="slide one" fill className="object-cover object-center" />;
+    </div>
+  );
+}
+function Slide2() {
+  return (
+    <div className="relative h-full">
+      <p className="absolute z-10 right-4 top-10 text-2xl">La primera visita fue la de un hombre que preguntó:</p>
+      <p className="absolute z-10 right-20 top-36 text-2xl">Maestro, ¿Dios existe?</p>
+      <p className="absolute z-10 right-72 top-72 text-2xl">Sí -fue la lacónica respuesta.</p>
+      <Image src="/images/slide_2.jpg" alt="slide one" fill className="object-cover object-center" />;
+    </div>
+  );
+}
+function Slide3() {
+  return (
+    <div className="relative h-full">
+      <p className="absolute z-10 right-4 top-10 text-2xl">En la segunda visita una mujer también preguntó:</p>
+      <p className="absolute z-10 right-20 top-36 text-2xl">-Señor, ¿Dios existe?</p>
+      <p className="absolute z-10 right-72 w-80 top-72 text-2xl">-No -fue en esta oportunidad la contestación.</p>
+      <Image src="/images/slide_3.jpg" alt="slide one" fill className="object-cover object-center" />;
     </div>
   );
 }
